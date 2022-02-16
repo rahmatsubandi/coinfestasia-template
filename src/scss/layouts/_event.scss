@@ -1,0 +1,15 @@
+.event {
+  &-slide {
+    .splide {
+      &__slide {
+        @apply rounded-xl lg:rounded-[22px];
+        @apply overflow-hidden;
+
+        img {
+          @apply img-cver;
+          @apply h-full w-full;
+        }
+      }
+    }
+  }
+}

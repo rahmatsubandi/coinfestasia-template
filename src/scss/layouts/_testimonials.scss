@@ -1,0 +1,14 @@
+.testimonials {
+  .wrapp-hdding {
+    &.wrapp-hdding {
+      &-section {
+        .wrapp-hdding {
+          &-title {
+            @apply leading-[normal];
+            @apply mb-0;
+          }
+        }
+      }
+    }
+  }
+}

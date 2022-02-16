@@ -1,0 +1,21 @@
+@layer components {
+  .twline {
+    @apply flex flex-col;
+    @apply relative;
+
+    &-line {
+      @apply border-[1px] border-solid border-white rounded-3xl;
+      @apply mb-2 last:mb-0;
+      @apply h-0 w-[18px];
+    }
+
+    &.close {
+      .twline {
+        &-line {
+          @apply first:rotate-[-45deg] first:translate-y-[5px];
+          @apply last:rotate-45 last:translate-y-[-5px];
+        }
+      }
+    }
+  }
+}   

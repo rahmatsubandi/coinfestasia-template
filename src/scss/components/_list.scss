@@ -1,0 +1,31 @@
+@layer components {
+  .menu {
+    @apply flex;
+    @apply list-none;
+
+    &-item {
+      @apply mb-2 last:mb-0;
+
+      a {
+        @apply text-white;
+        @apply font-bevietnam-pro text-sm font-medium no-underline;
+        @apply relative outline-none;
+
+        @apply transition-all duration-300 ease-in-out;
+      }
+    }
+  }
+
+  .scmedia {
+    &-item {
+      a {
+        @apply text-white no-underline outline-none;
+
+        img {
+          @apply img-cver;
+          @apply h-6 w-6 pointer-events-none;
+        }
+      }
+    }
+  }
+}

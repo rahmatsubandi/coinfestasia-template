@@ -1,0 +1,34 @@
+.footr { 
+  @apply relative;
+
+  &-main {
+    &_tautan {
+      .heading {
+        @apply flex items-center justify-between;
+      }
+
+      .menu {
+        &-item {
+          a {
+            @apply flex items-start;
+            @apply text-[#323E53] hover:text-white;
+          }
+        }
+      }
+
+      .main-menu{
+        .menu {
+          &-item {
+            @apply mb-4 last:mb-0;
+
+            a {
+              @apply text-base;
+            }
+          }
+        }
+      }
+    } 
+
+    
+  }  
+}  

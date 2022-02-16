@@ -1,0 +1,19 @@
+.bx {
+  &-banner {
+    background: linear-gradient(90deg, #102447 0%, #031229 55.23%, #061226 100%);
+    @apply rounded-2xl;
+
+    .wrapp-hdding {
+      &.wrapp-hdding {
+        &-section {
+          .wrapp-hdding {
+            &-title {
+              @apply text-2xl lg:text-[32px] leading-[normal] tracking-tight;
+              @apply mb-0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

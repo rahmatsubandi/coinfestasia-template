@@ -1,0 +1,25 @@
+@import "./typhography";
+@import "./configs";
+
+// Tailwind CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Components
+@import "./components/card";
+@import "./components/icons";
+@import "./components/indicator";
+@import "./components/list";
+@import "./components/nav";
+@import "./components/navbar";
+@import "./components/wrapp";
+
+// Layouts
+@import "./layouts/wrapper";
+
+@import "./layouts/header";
+@import "./layouts/banner";
+@import "./layouts/event";
+@import "./layouts/testimonials";
+@import "./layouts/footer";

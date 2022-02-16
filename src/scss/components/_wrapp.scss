@@ -1,0 +1,32 @@
+@layer components {
+  .wrapp {
+    &-hdding {
+      &-section {
+        .wrapp {
+          &-hdding {
+
+            &-tags,
+            span {
+              @apply text-[#F5C52A] font-bevietnam-pro text-sm sm:text-base font-medium;
+              @apply mb-2;
+            }
+
+            &-title,
+            h3 {
+              background: linear-gradient(97.41deg, #6268FF 5.64%, #9BFFE7 94.13%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              @apply font-montserrat text-2xl sm:text-[40px] font-bold leading-[48px] tracking-wide;
+              @apply mb-1;
+            }
+
+            &-desc,
+            p {
+              @apply text-[#485772] font-bevietnam-pro text-sm sm:text-base font-normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  @apply text-[#B0B8C5] font-bevietnam-pro text-base font-normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .bx-brand-items {
+    @apply flex items-center justify-center;
+    @apply h-[84px] w-52;
+  }
+  .bx-brand-items img {
+    @apply h-auto w-max;
+    @apply pointer-events-none;
+  }
+  .bx-payment {
+    @apply bg-transparent;
+    @apply cursor-pointer;
+    @apply rounded-lg;
+    @apply p-px;
+  }
+  .bx-payment-main {
+    @apply rounded-lg;
+    @apply py-6 px-6;
+  }
+  .bx-payment-heading h1, .bx-payment-heading_title,
+.bx-payment-heading span, .bx-payment-heading_tags {
+    @apply font-bevietnam-pro text-sm font-bold;
+  }
+  .bx-payment-heading h1, .bx-payment-heading_title {
+    @apply bg-white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bx-payment-price h1, .bx-payment-price_title {
+    @apply bg-white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @apply text-[40px] font-bold leading-[normal];
+  }
+  .bx-payment-price span, .bx-payment-price_currency {
+    @apply text-xl font-medium ml-2 leading-[normal];
+  }
+  .bx-payment-desc {
+    @apply font-bevietnam-pro text-base font-normal;
+  }
+  .bx-payment:hover, .bx-payment:focus {
+    background: linear-gradient(90deg, #004ED0 0%, #5B97FC 102.94%);
+  }
+  .bx-payment:hover .bx-payment-heading h1, .bx-payment:hover .bx-payment-heading_title, .bx-payment:focus .bx-payment-heading h1, .bx-payment:focus .bx-payment-heading_title {
+    background: linear-gradient(90deg, #FED22A 0%, #F86614 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bx-payment:hover .bx-payment-price h1, .bx-payment:hover .bx-payment-price_title, .bx-payment:focus .bx-payment-price h1, .bx-payment:focus .bx-payment-price_title {
+    background: linear-gradient(90deg, #FED22A 0%, #F86614 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bx-payment.selected {
+    background: linear-gradient(90deg, #004ED0 0%, #5B97FC 102.94%);
+  }
+  .bx-payment.selected .bx-payment-heading h1, .bx-payment.selected .bx-payment-heading_title {
+    background: linear-gradient(90deg, #FED22A 0%, #F86614 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bx-payment.selected .bx-payment-price h1, .bx-payment.selected .bx-payment-price_title {
+    background: linear-gradient(90deg, #FED22A 0%, #F86614 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bx-payment-detail .btn {
+    @apply transition duration-300 ease-in-out;
+    @apply hover:btn-info;
+  }
+  .bx-payment-detail .btn .icons-left {
+    @apply mr-2;
+  }
+  .bx-payment-detail .btn.selected {
+    @apply btn-info;
+  }
+  .bx-speakers {
+    background-image: linear-gradient(180deg, rgba(12, 29, 58, 0) 18.84%, #081A38 100%);
+    border-radius: 384px 384px 56px 56px;
+    @apply overflow-hidden;
+    @apply relative;
+    @apply p-1 sm:p-1.5;
+    @apply h-[218px] lg:h-[292px] xl:h-[362px];
+  }
+  .bx-speakers-imags {
+    @apply bg-[#04142F];
+    border-radius: 384px 384px 48px 48px;
+    @apply overflow-hidden;
+    @apply pt-3;
+    @apply h-full;
+  }
+  .bx-speakers-imags img {
+    @apply grayscale;
+    @apply img-cver h-full w-full;
+    @apply pointer-events-none;
+    @apply transition duration-300 ease-in-out;
+  }
+  .bx-speakers:hover, .bx-speakers:focus {
+    background-image: linear-gradient(180deg, rgba(81, 66, 255, 0) 24.19%, #5142FF 100%);
+  }
+  .bx-speakers:hover .bx-speakers-imags, .bx-speakers:focus .bx-speakers-imags {
+    background: linear-gradient(180deg, rgba(64, 45, 183, 0) 19.89%, #40319D 100%);
+  }
+  .bx-speakers:hover .bx-speakers-imags img, .bx-speakers:focus .bx-speakers-imags img {
+    @apply grayscale-0;
+  }
+  .bx-banner {
+    background: linear-gradient(90deg, #102447 0%, #031229 55.23%, #061226 100%);
+    @apply rounded-2xl;
+  }
+}
+@layer components {
+  .twline {
+    @apply flex flex-col;
+    @apply relative;
+  }
+  .twline-line {
+    @apply border-[1px] border-solid border-white rounded-3xl;
+    @apply mb-2 last:mb-0;
+    @apply h-0 w-[18px];
+  }
+  .twline.close .twline-line {
+    @apply first:rotate-[-45deg] first:translate-y-[5px];
+    @apply last:rotate-45 last:translate-y-[-5px];
+  }
+}
+@keyframes indicatorDown {
+  0% {
+    @apply opacity-0;
+    @apply mt-[15px];
+  }
+  100% {
+    @apply mt-5;
+    @apply opacity-100;
+  }
+}
+.indicator-scrolldown-icons {
+  @apply relative;
+}
+.indicator-scrolldown-icons::before {
+  @apply content-[""];
+  @apply border-2 border-white rounded-full;
+  @apply h-[22px] w-3.5;
+}
+.indicator-scrolldown-icons::after {
+  @apply content-[""];
+  @apply bg-white;
+  @apply absolute inset-0;
+  @apply m-auto mt-[15px];
+  @apply h-1 w-0.5;
+  -webkit-animation: indicatorDown 1.4s ease-in infinite;
+  -moz-animation: indicatorDown 1.4s ease-in infinite;
+  animation: indicatorDown 1.4s ease-in infinite;
+}
+
+@layer components {
+  .menu {
+    @apply flex;
+    @apply list-none;
+  }
+  .menu-item {
+    @apply mb-2 last:mb-0;
+  }
+  .menu-item a {
+    @apply text-white;
+    @apply font-bevietnam-pro text-sm font-medium no-underline;
+    @apply relative outline-none;
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .scmedia-item a {
+    @apply text-white no-underline outline-none;
+  }
+  .scmedia-item a img {
+    @apply img-cver;
+    @apply h-6 w-6 pointer-events-none;
+  }
+}
+@layer components {
+  .navbar-nav .nav-item {
+    @apply mr-0 sm:mr-12 last:mr-0;
+  }
+  .navbar-nav .nav-link {
+    @apply text-white font-bevietnam-pro text-sm lg:text-base font-normal;
+  }
+}
+@layer components {
+  .navbar {
+    @apply bg-transparent;
+    @apply flex items-center;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .navbar.active {
+    @apply bg-[#020D21];
+    box-shadow: 0px 4px 33px rgba(45, 62, 94, 0.09);
+    @apply z-base;
+  }
+}
+@layer components {
+  .wrapp-hdding-section .wrapp-hdding-tags,
+.wrapp-hdding-section .wrapp-hdding span {
+    @apply text-[#F5C52A] font-bevietnam-pro text-sm sm:text-base font-medium;
+    @apply mb-2;
+  }
+  .wrapp-hdding-section .wrapp-hdding-title,
+.wrapp-hdding-section .wrapp-hdding h3 {
+    background: linear-gradient(97.41deg, #6268FF 5.64%, #9BFFE7 94.13%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @apply font-montserrat text-2xl sm:text-[40px] font-bold leading-[48px] tracking-wide;
+    @apply mb-1;
+  }
+  .wrapp-hdding-section .wrapp-hdding-desc,
+.wrapp-hdding-section .wrapp-hdding p {
+    @apply text-[#485772] font-bevietnam-pro text-sm sm:text-base font-normal;
+  }
+}
+.wrapp-main {
+  @apply mt-16 sm:mt-[76px] lg:mt-[98px];
+}
+
+.header::after {
+  @apply content-[""];
+  background: linear-gradient(0deg, #05132A 0%, rgba(5, 19, 42, 0.52) 46.06%, rgba(7, 28, 64, 0) 85.98%);
+  @apply absolute top-auto inset-x-0 bottom-0;
+  @apply pointer-events-none;
+  @apply h-[130px] sm:h-[196px] lg:h-[308px] w-full;
+  @apply z-50;
+}
+
+.bx-banner {
+  background: linear-gradient(90deg, #102447 0%, #031229 55.23%, #061226 100%);
+  @apply rounded-2xl;
+}
+.bx-banner .wrapp-hdding.wrapp-hdding-section .wrapp-hdding-title {
+  @apply text-2xl lg:text-[32px] leading-[normal] tracking-tight;
+  @apply mb-0;
+}
+
+.event-slide .splide__slide {
+  @apply rounded-xl lg:rounded-[22px];
+  @apply overflow-hidden;
+}
+.event-slide .splide__slide img {
+  @apply img-cver;
+  @apply h-full w-full;
+}
+
+.testimonials .wrapp-hdding.wrapp-hdding-section .wrapp-hdding-title {
+  @apply leading-[normal];
+  @apply mb-0;
+}
+
+.footr {
+  @apply relative;
+}
+.footr-main_tautan .heading {
+  @apply flex items-center justify-between;
+}
+.footr-main_tautan .menu-item a {
+  @apply flex items-start;
+  @apply text-[#323E53] hover:text-white;
+}
+.footr-main_tautan .main-menu .menu-item {
+  @apply mb-4 last:mb-0;
+}
+.footr-main_tautan .main-menu .menu-item a {
+  @apply text-base;
+}
+
+/*# sourceMappingURL=theme.css.map */

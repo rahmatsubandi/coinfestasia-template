@@ -1,0 +1,15 @@
+@layer components {
+  .navbar {
+    &-nav {
+      .nav {
+        &-item {
+          @apply mr-0 sm:mr-12 last:mr-0;
+        }
+
+        &-link {
+          @apply text-white font-bevietnam-pro text-sm lg:text-base font-normal;
+        }
+      }
+    }
+  }
+}

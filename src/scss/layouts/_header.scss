@@ -1,0 +1,11 @@
+.header {
+  &::after {
+    @apply content-[''];
+    background: linear-gradient(0deg, #05132A 0%, rgba(5, 19, 42, 0.52) 46.06%, rgba(7, 28, 64, 0) 85.98%);
+    @apply absolute top-auto inset-x-0 bottom-0;
+    @apply pointer-events-none;
+    @apply h-[130px] sm:h-[196px] lg:h-[308px] w-full;
+
+    @apply z-50; 
+  }
+} 

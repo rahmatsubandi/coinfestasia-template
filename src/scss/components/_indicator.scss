@@ -1,0 +1,37 @@
+@keyframes indicatorDown {
+  0% {
+    @apply opacity-0;
+    @apply mt-[15px];
+  }
+
+  100% {
+    @apply mt-5;
+    @apply opacity-100;
+  }
+}
+
+.indicator {
+  &-scrolldown {
+    &-icons {
+      @apply relative;
+
+      &::before {
+        @apply content-[''];
+        @apply border-2 border-white rounded-full;
+        @apply h-[22px] w-3.5;
+      }
+
+      &::after {
+        @apply content-[''];
+        @apply bg-white;
+        @apply absolute inset-0;
+        @apply m-auto mt-[15px];
+        @apply h-1 w-0.5;
+
+        -webkit-animation: indicatorDown 1.4s ease-in infinite;
+        -moz-animation: indicatorDown 1.4s ease-in infinite;
+        animation: indicatorDown 1.4s ease-in infinite;
+      }
+    }
+  }
+}

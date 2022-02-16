@@ -1,0 +1,183 @@
+@layer components {
+  .bx {
+    &-brand {
+      &-items {
+        @apply flex items-center justify-center;
+        @apply h-[84px] w-52;
+
+        img {
+          @apply h-auto w-max;
+          @apply pointer-events-none;
+        }
+      }
+    }
+
+    &-payment {
+      @apply bg-transparent;
+      @apply cursor-pointer; 
+      @apply rounded-lg; 
+      @apply p-px;
+      
+      &-main {
+        @apply rounded-lg;
+        @apply py-6 px-6;
+      }
+
+      &-heading {
+        h1,
+        &_title ,
+        span,
+        &_tags {
+          @apply font-bevietnam-pro text-sm font-bold;
+        }
+
+        h1,
+        &_title {
+          @apply bg-white;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      &-price {
+        h1,
+        &_title {
+          @apply bg-white;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          @apply text-[40px] font-bold leading-[normal];
+        }
+
+        span,
+        &_currency {
+          @apply text-xl font-medium ml-2 leading-[normal];
+        }
+      }
+
+      &-desc {
+        @apply font-bevietnam-pro text-base font-normal;
+      }
+
+      &:hover ,
+      &:focus {
+        background: linear-gradient(90deg, #004ED0 0%, #5B97FC 102.94%);
+
+        .bx {
+          &-payment {
+            &-heading {
+              h1,
+              &_title {
+                background: linear-gradient(90deg, #FED22A 0%, #F86614 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+
+            &-price {
+    
+              h1,
+              &_title {
+                background: linear-gradient(90deg, #FED22A 0%, #F86614 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+          }
+        }
+      }
+
+      &.selected {
+        background: linear-gradient(90deg, #004ED0 0%, #5B97FC 102.94%);
+        
+        .bx {
+          &-payment {
+            &-heading {
+
+              h1,
+              &_title {
+                background: linear-gradient(90deg, #FED22A 0%, #F86614 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+
+            &-price {
+
+              h1,
+              &_title {
+                background: linear-gradient(90deg, #FED22A 0%, #F86614 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+          }
+        }
+      }
+      
+      &-detail {
+        .btn {
+          .icons {
+            &-left {
+              @apply mr-2;
+            }
+          }
+
+          @apply transition duration-300 ease-in-out;
+
+          @apply hover:btn-info;
+
+          &.selected {
+            @apply btn-info;
+          }
+        }
+      }
+    }
+
+    &-speakers {
+      background-image: linear-gradient(180deg, rgba(12, 29, 58, 0) 18.84%, #081A38 100%);
+      border-radius: 384px 384px 56px 56px;
+      @apply overflow-hidden;
+      @apply relative;
+      @apply p-1 sm:p-1.5;
+      @apply h-[218px] lg:h-[292px] xl:h-[362px];
+
+      &-imags {
+        @apply bg-[#04142F];
+        border-radius: 384px 384px 48px 48px;
+        @apply overflow-hidden;
+        @apply pt-3;
+        @apply h-full;
+
+        img {
+          @apply grayscale;
+          @apply img-cver h-full w-full;
+          @apply pointer-events-none;
+
+          @apply transition duration-300 ease-in-out;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        background-image: linear-gradient(180deg, rgba(81, 66, 255, 0) 24.19%, #5142FF 100%);
+
+        .bx {
+          &-speakers {
+            &-imags {
+              background: linear-gradient(180deg, rgba(64, 45, 183, 0) 19.89%, #40319D 100%);
+
+              img {
+                @apply grayscale-0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-banner {
+      background: linear-gradient(90deg, #102447 0%, #031229 55.23%, #061226 100%);
+      @apply rounded-2xl;
+    }
+  } 
+}
