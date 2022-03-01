@@ -1,0 +1,30 @@
+.splide {
+  &__slide {
+    @apply relative; 
+  
+    img { 
+      @apply img-cver min-h-full max-h-full min-w-full;
+    }
+
+    &-content {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 18%, #000000 100%);
+    }
+  }
+}
+
+.thumbnails {
+  @apply flex justify-end;
+  @apply p-0;
+
+  .thumbnail {
+    @apply cursor-pointer;
+    @apply list-none;
+    @apply overflow-hidden;
+    @apply h-20 w-[104px];
+  }
+
+  img {
+    @apply img-cver min-h-full max-h-full w-max;
+    @apply grayscale;
+  }
+}

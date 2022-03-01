@@ -1,0 +1,184 @@
+input[type="date"i]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"i]::-webkit-calendar-picker-indicator,
+input[type="month"i]::-webkit-calendar-picker-indicator,
+input[type="week"i]::-webkit-calendar-picker-indicator,
+input[type="time"i]::-webkit-calendar-picker-indicator {
+  @apply cursor-pointer;
+  @apply bg-blue-50;
+  background-size: 24px 24px;
+  @apply bg-center;
+  @apply absolute inset-y-0 right-0;
+  @apply p-0 m-0;
+  @apply h-auto w-14;
+
+  @apply z-50;
+}
+
+input[type="date"i]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"i]::-webkit-calendar-picker-indicator,
+input[type="month"i]::-webkit-calendar-picker-indicator,
+input[type="week"i]::-webkit-calendar-picker-indicator {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8 7V3V7ZM16 7V3V7ZM7 11H17H7ZM5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21Z' stroke='%231E386B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+}
+
+input[type="time"i]::-webkit-calendar-picker-indicator {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z' stroke='%231E386B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+}
+
+input[type=file]::file-selector-button {
+  @apply bg-blue-50;
+  @apply border-0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7.00007 16C6.01509 16.0011 5.06433 15.6388 4.32994 14.9823C3.59556 14.3259 3.12919 13.4216 3.02018 12.4427C2.91118 11.4638 3.1672 10.479 3.73921 9.67714C4.31121 8.87526 5.15897 8.31263 6.12007 8.09703C5.84199 6.80012 6.0905 5.44586 6.81092 4.33218C7.53134 3.21849 8.66467 2.43661 9.96157 2.15853C11.2585 1.88045 12.6127 2.12895 13.7264 2.84937C14.8401 3.56979 15.622 4.70312 15.9001 6.00003H16.0001C17.24 5.99878 18.4362 6.45831 19.3564 7.2894C20.2766 8.12049 20.8552 9.26386 20.9798 10.4975C21.1044 11.7312 20.7662 12.9672 20.0308 13.9655C19.2954 14.9638 18.2152 15.6533 17.0001 15.9M15.0001 13L12.0001 10M12.0001 10L9.00007 13M12.0001 10V16V22' stroke='%231E386B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  @apply bg-no-repeat;
+  background-position: left 12px center;
+  background-size: 24px 24px;
+  @apply text-blue-600 font-bevietnam-pro text-base font-medium;
+  @apply absolute inset-y-0 right-0;
+  @apply pl-10 pr-3;
+  @apply mr-0;
+
+  @apply z-50;
+
+  @apply hover:bg-blue-50;
+
+  &:hover {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7.00007 16C6.01509 16.0011 5.06433 15.6388 4.32994 14.9823C3.59556 14.3259 3.12919 13.4216 3.02018 12.4427C2.91118 11.4638 3.1672 10.479 3.73921 9.67714C4.31121 8.87526 5.15897 8.31263 6.12007 8.09703C5.84199 6.80012 6.0905 5.44586 6.81092 4.33218C7.53134 3.21849 8.66467 2.43661 9.96157 2.15853C11.2585 1.88045 12.6127 2.12895 13.7264 2.84937C14.8401 3.56979 15.622 4.70312 15.9001 6.00003H16.0001C17.24 5.99878 18.4362 6.45831 19.3564 7.2894C20.2766 8.12049 20.8552 9.26386 20.9798 10.4975C21.1044 11.7312 20.7662 12.9672 20.0308 13.9655C19.2954 14.9638 18.2152 15.6533 17.0001 15.9M15.0001 13L12.0001 10M12.0001 10L9.00007 13M12.0001 10V16V22' stroke='%231E386B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+    @apply bg-no-repeat;
+    background-position: left 12px center;
+    background-size: 24px 24px;
+  }
+}
+
+@layer components {
+  .form {
+    &-input,
+    &-select, 
+    &-textarea {
+      @apply bg-blue-900; 
+      @apply border border-gray-600 hover:border-[#6279F6] focus:border-[#6279F6] focus:ring-0 rounded;
+      @apply text-white placeholder:text-gray-600 font-bevietnam-pro text-base font-normal;
+      @apply outline-none focus:outline-none;
+      @apply relative;
+      @apply py-3 px-3;
+      @apply w-full;
+
+      @apply transition-all duration-300 ease-in-out;
+
+      &.disabled {
+        @apply bg-gray-50 border-gray-200 placeholder:text-gray-200;
+      }
+
+      &.input {
+        &-icons {
+          &-left {
+            @apply pl-9;
+          }
+
+          &-right {
+            @apply pr-9;
+          }
+        }
+      }
+
+      &-base {
+        @apply text-base font-normal;
+        @apply py-4 px-4;
+
+        &.input {
+          &-icons {
+            &-left {
+              @apply pl-[42px];
+            }
+
+            &-right {
+              @apply pr-[42px];
+            }
+          }
+        }
+      }
+
+      &-xl {
+        @apply text-xl font-normal;
+        @apply py-6 px-6;
+
+        &.input {
+          &-icons {
+            &-left {
+              @apply pl-[52px];
+            }
+
+            &-right {
+              @apply pr-[52px];
+            }
+          }
+        }
+      }
+    }
+
+    &-select {
+      &-base {
+        background-position: right 14px center;
+      }
+  
+      &-xl {
+        background-position: right 18px center;
+        background-size: 20px 14px;
+      }
+    }
+  
+    &-checkbox,
+    &-radio {
+      @apply border-blue-100;
+      @apply mt-[1px];
+      @apply h-[18px] w-[18px];
+  
+      @apply transition-all duration-300 ease-in-out;
+  
+      &-label,
+      &-sublabel {
+        @apply font-bevietnam-pro;
+      }
+  
+      &-label {
+        @apply text-base font-normal;
+      }
+  
+      &-sublabel {
+        @apply text-sm font-normal;
+      }
+    }
+  
+    &-file {
+      @apply relative;
+      @apply py-3 pl-3 pr-[127px];
+      @apply h-auto;
+  
+      &-base {
+        @apply text-base font-normal;
+        @apply py-4 pl-4 pr-[133px];
+      }
+  
+      &-xl {
+        @apply text-xl font-normal;
+        @apply py-6 pl-4 pr-[133px];
+      }
+    }   
+  }
+} 
+
+.form {
+  &-input {
+    &-datepicker {
+      &::before {
+        @apply content-['']; 
+        @apply bg-blue-50;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8 7V3V7ZM16 7V3V7ZM7 11H17H7ZM5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21Z' stroke='%231E386B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+        @apply bg-no-repeat bg-center;
+        @apply absolute inset-y-0 left-auto right-0;
+        @apply w-14; 
+
+        @apply z-[110]; 
+      }
+    }
+  }
+}

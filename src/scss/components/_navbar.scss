@@ -14,8 +14,21 @@
       @apply z-base;
     }
 
-    // &-collapse {
-    
-    // }
+    &-collapse {
+      @apply flex;
+      @apply fixed sm:relative top-16 sm:top-0 inset-x-0;      
+
+      @apply invisible sm:visible opacity-0 sm:opacity-100;
+      @apply z-[-1] sm:z-10;
+
+      @apply transform -translate-y-6 sm:translate-y-0;
+
+      &.active {
+        @apply bg-[#020D21];
+        @apply visible opacity-100;
+
+        @apply transform translate-y-0; 
+      }
+    }
   }
-}
+}  

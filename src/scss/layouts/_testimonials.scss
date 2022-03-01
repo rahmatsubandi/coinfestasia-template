@@ -1,12 +1,41 @@
 .testimonials {
   .wrapp-hdding {
     &.wrapp-hdding {
-      &-section {
-        .wrapp-hdding {
-          &-title {
-            @apply leading-[normal];
-            @apply mb-0;
+      &-title {
+        @apply leading-[normal];
+        @apply mb-0;
+      }
+    }
+  }
+
+  .splide {
+    &__slide {
+      &.is-active {
+        .bx-testimonials {
+          background: linear-gradient(90deg, #004ED0 0%, #5B97FC 102.94%);
+          @apply opacity-100;
+
+          &-tags {
+            &_desc {
+              .name {
+                background: none;
+                -webkit-text-fill-color: unset;
+                @apply text-white;
+              }
+            }
           }
+        }
+      }
+    }
+    
+    &__pagination {  
+      @apply -bottom-7;  
+
+      &__page { 
+        @apply bg-white/20;
+   
+        &.is-active { 
+          @apply bg-white;
         }
       }
     }

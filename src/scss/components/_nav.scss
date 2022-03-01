@@ -1,13 +1,138 @@
 @layer components {
   .navbar {
-    &-nav {
+    .nav {
+      &.menu {
+        .menu {
+          &-item {
+            @apply flex flex-col sm:flex-row relative xl:static;
+            @apply mr-3 lg:mr-6 xl:mr-12 last:mr-0 mb-0; 
+  
+            @apply transition duration-300 ease-in-out;
+ 
+            a {
+              @apply text-white font-bevietnam-pro text-sm lg:text-base font-normal;
+              @apply py-3 px-3;
+            }
+
+            .dropdown-toggle {
+              @apply flex items-center justify-center;
+              @apply absolute sm:relative top-1.5 sm:top-0 left-auto sm:left-0 right-0 bottom-auto sm:bottom-0;
+              @apply -ml-3 xl:-ml-1 w-max;
+              @apply h-8 xl:h-max w-8 xl:w-max;
+
+              @apply transition duration-300 ease-in-out;
+
+              &-icons {
+                @apply transition duration-300 ease-in-out;
+              }
+
+              &.show {
+                .dropdown-toggle {
+                  &-icons {
+                    @apply transform rotate-180;
+                  }
+                }
+              }
+            }
+
+            &:hover,
+            &:focus {
+
+              a,
+              .dropdown-toggle {
+                @apply text-white;
+                @apply decoration-inherit;
+              }
+            }
+
+            .submenu {
+              @apply bg-[#020D21];
+              @apply flex-col;
+              @apply rounded-lg;
+              @apply relative sm:absolute top-0 sm:top-full left-0 sm:left-auto;
+              @apply my-1.5 sm:my-0 py-0 pl-3 pr-4 sm:py-6 sm:px-6;
+              @apply w-full min-w-[216px] sm:max-w-max;
+
+              @apply z-[250];
+
+              @screen xl {
+                box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+              }
+
+              .menu {
+                &-item {
+                  @apply mb-2 mr-0 last:mb-0;
+
+                  a {
+                    @apply justify-start;
+                    @apply rounded;
+                    @apply decoration-transparent;
+                    @apply text-white font-bevietnam-pro text-sm lg:text-base font-normal;
+                    @apply text-sm xl:text-base;
+                    @apply w-full;
+
+                    @apply transition duration-300 ease-in-out;
+                  }
+
+                  &:hover,
+                  &:focus {
+                    a {
+                      @apply decoration-transparent;
+                    }
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Nav Menu (Dropdown)
+      .dropdown-item {
+        &.menu {
+          &-item {
+            @apply flex items-start sm:items-center;
+            @apply active:bg-transparent; 
+          }  
+        } 
+
+        &-md {
+          .dropdown-menu {
+            &.submenu {
+              @apply min-w-[308px];
+
+              .menu {
+                &-item {
+                  a {
+                    @apply pr-[84px];
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Nav Tabs
+  .nav {
+    &-tabs {
       .nav {
         &-item {
-          @apply mr-0 sm:mr-12 last:mr-0;
+          &.active {
+            @apply bg-[#061734];
+          }
         }
 
         &-link {
-          @apply text-white font-bevietnam-pro text-sm lg:text-base font-normal;
+          &.active {
+            background: linear-gradient(97.41deg, #FFFFFF 5.64%, #6268FF 65.65%, #9BFFE7 94.13%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @apply border-[#AE5CFF];
+          }
         }
       }
     }

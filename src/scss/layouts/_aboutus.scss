@@ -1,0 +1,24 @@
+.aboutus {
+  &-imags {
+    img {
+      @apply img-cver min-h-full max-h-full w-auto; 
+      @apply pointer-events-none;
+    }
+  }
+
+  #aboutUsMainSlide.splide {
+    .splide {
+      &__track {
+        @apply relative;
+
+        &::after {
+          @apply content-[''];
+          background: linear-gradient(270deg, rgba(183, 40, 40, 0.3) 0%, rgba(28, 50, 255, 0.3) 100%);
+          @apply absolute inset-0;
+
+          @apply z-[5];
+        } 
+      } 
+    } 
+  } 
+}

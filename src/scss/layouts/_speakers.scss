@@ -1,0 +1,29 @@
+.speakers {
+  &-imags {
+    &::after {
+      @apply content-[''];
+      background: radial-gradient(50% 43.8% at 50% 50%, rgba(4, 20, 47, 0.22) 0%, #04142F 100%);
+      @apply absolute inset-0;
+    }
+  }
+
+  &-form {
+    .wrapp {
+      &-hdding {
+        &-title {
+          @apply text-2xl;
+        }
+      }
+    }
+
+    .bx {
+      &-content {
+        @apply text-white; 
+
+        a {
+          @apply text-[#267FE5];
+        }
+      }
+    }
+  } 
+}

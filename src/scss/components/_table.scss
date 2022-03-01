@@ -1,0 +1,12 @@
+.table {
+  tbody {
+    tr {
+      td {
+        @apply font-bevietnam-pro;
+        @apply align-top;
+
+        @apply first:bg-[#081A38] first:rounded-xl;
+      }
+    }
+  }
+}

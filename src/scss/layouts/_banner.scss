@@ -4,15 +4,9 @@
     @apply rounded-2xl;
 
     .wrapp-hdding {
-      &.wrapp-hdding {
-        &-section {
-          .wrapp-hdding {
-            &-title {
-              @apply text-2xl lg:text-[32px] leading-[normal] tracking-tight;
-              @apply mb-0;
-            }
-          }
-        }
+      &-title {
+        @apply text-2xl lg:text-[32px] leading-[normal] tracking-tight;
+        @apply mb-0;
       }
     }
   }

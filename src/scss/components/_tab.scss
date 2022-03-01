@@ -1,0 +1,22 @@
+.tab {
+  &-pane {
+    &.more {
+      @apply h-full min-h-max;
+
+      .link {
+        background: linear-gradient(90deg, #004ED0 0%, #5B97FC 102.94%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @apply font-bevietnam-pro text-sm sm:text-base font-normal; 
+      }
+
+      &::after {
+        @apply content-[''];
+        background: linear-gradient(0deg, #04142F 8.02%, rgba(4, 20, 47, 0) 100%);
+        @apply absolute inset-0;
+
+        @apply z-[5];
+      }
+    }
+  } 
+} 
