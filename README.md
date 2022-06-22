@@ -1,0 +1,1 @@
+# coinfestasia-template
